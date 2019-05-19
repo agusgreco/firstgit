@@ -3,7 +3,7 @@ ul {
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: #e9e9e9;
+background-color: black;
 margin-top: 0;
 margin-bottom: 0;
 }
@@ -21,7 +21,7 @@ li.home {
 a.gen{
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: white;
 
 }
 
