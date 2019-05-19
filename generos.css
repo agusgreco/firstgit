@@ -3,7 +3,7 @@ ul {
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: grey;
+background-color: black;
 margin-top: 0;
 margin-bottom: 0;
 }
@@ -33,4 +33,33 @@ a.gen{
 
 img.logg {
   width: 100%
+}
+div.generos{
+  overflow: hidden;
+  margin-top: 3%;
+  padding-top: 3%;
+
+
+}
+
+
+.gene{
+  font-weight: bold;
+  color: white;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 40px;
+  position: relative;
+  margin-bottom: 4%;
+  text-align: center;
+
+}
+
+.gene2{
+  color: white;
+
+}
+
+a{
+  text-decoration: none;
 }
