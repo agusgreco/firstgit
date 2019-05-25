@@ -1,0 +1,37 @@
+ul {
+  list-style: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: black;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+li.home {
+  float: left;
+  display: block;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding-top: 3%
+}
+
+a.gen{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+
+}
+
+#home2 {
+  width: 8%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+img.logg {
+  width: 100%
+}

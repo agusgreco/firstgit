@@ -1,0 +1,34 @@
+
+
+*{
+  background-color: black;
+  color: white;
+}
+
+footer{
+
+  position: relative;
+}
+
+.names {
+font-family: sans-serif;
+position: absolute;
+top: 8vh;
+left: 20vw;
+}
+
+.alumnos{
+position: absolute;
+font-family: sans-serif;
+left: 20vw;
+top: 2vh;
+
+}
+
+.tmdb{
+position: absolute;
+font-family: sans-serif;
+width:125px;
+top: 3vh;
+left: 1vw;
+}

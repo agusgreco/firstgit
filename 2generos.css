@@ -11,7 +11,7 @@ margin-bottom: 0;
 li.home {
   float: left;
   display: block;
-  width: 18%;
+  width: 25%;
   text-align: center;
   text-decoration: none;
   font-size: 1.4em;
@@ -29,8 +29,39 @@ a.gen{
   width: 8%;
   padding-top: 0;
   padding-bottom: 0;
+
 }
 
 img.logg {
   width: 100%
+}
+
+div.generos{
+  overflow: hidden;
+  margin-top: 3%;
+  padding-top: 3%;
+
+
+}
+
+
+.gene{
+  font-weight: bold;
+  color: white;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 40px;
+  position: relative;
+  margin-bottom: 4%;
+  text-align: center;
+
+}
+
+.gene2{
+  color: white;
+
+}
+
+a{
+  text-decoration: none;
 }
