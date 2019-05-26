@@ -1,0 +1,235 @@
+.populares {
+    border-radius: 25px;
+    background: #ccffdd;
+    padding: 20px;
+    font-size: large;
+    margin-bottom: 1%;
+    font-family: sans-serif;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.Peli1{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+
+.Peli2{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli3{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli4{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+    margin-top: 5%
+}
+
+.Peli5{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli6{
+  float: left;
+  background-color: #ccffdd;
+    width: 100%;
+margin-top: 5%;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.mayorpuntaje{
+
+  border-radius: 25px;
+  background:  #ccffdd;
+  padding: 20px;
+  font-size: large;
+  margin-bottom: 1%;
+  font-family: sans-serif;
+  overflow: hidden;
+  text-align: center;
+}
+
+.Peli7{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli8{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli9{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli10{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli11{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli12{
+  float: left;
+  background-color: #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.proximamente{
+  border-radius: 25px;
+  background:  #ccffdd;
+  padding: 20px;
+  font-size: large;
+  margin-bottom: 1%;
+  font-family: sans-serif;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.Peli13{
+  float: left;
+  background-color:  #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli14{
+  float: left;
+  background-color:  #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli15{
+  float: left;
+  background-color:  #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli16{
+  float: left;
+  background-color:  #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli17{
+  float: left;
+  background-color:  #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+.Peli18{
+  float: left;
+  background-color:  #ccffdd;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 5%
+}
+
+img {
+  width: 90%;
+  height: 90vh;
+  border-radius: 20px;
+}
+
+a.next{
+
+      padding-top: 45%;
+      color:#003311;
+}
+
+a.prev{
+      left:0px;
+      padding-top: 45%;
+      color:#003311;
+
+}
+
+div.text{
+
+}
+
+div.numbertext{
+
+  color: #0d0d0d;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+h1.peli1,h1.peli2,h1.peli3,h1.peli4,h1.peli5,h1.peli6,h1.peli7,h1.peli8,h1.peli9,h1.peli10,h1.peli11,h1.peli12,h1.peli13,h1.peli14,h1.peli15,h1.peli16,h1.peli17,h1.peli18,{
+
+  position: absolute;
+  color: #ff9933;
+}
