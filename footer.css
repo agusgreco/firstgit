@@ -1,13 +1,12 @@
 
 
-*{
-  background-color: black;
-  color: white;
-}
 
 footer{
 
   position: relative;
+  background-color: black;
+  color: white;
+height: 25vh;
 }
 
 .names {
@@ -28,7 +27,9 @@ top: 2vh;
 .tmdb{
 position: absolute;
 font-family: sans-serif;
-width:125px;
+max-width:125px;
+width: 100%;
 top: 3vh;
 left: 1vw;
+
 }

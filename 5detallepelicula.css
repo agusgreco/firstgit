@@ -1,3 +1,5 @@
+*{box-sizing: border-box;}
+
 ul {
   list-style: none;
 margin: 0;
@@ -35,3 +37,34 @@ a.gen{
 img.logg {
   width: 100%
 }
+
+p{
+  color: black;
+}
+
+article{
+  overflow: hidden;
+
+}
+
+article img{
+  width: 30%;
+  float: left;
+    padding: 1%;
+
+}
+article div{
+  float: left;
+  width: 70%;
+    padding: 1%;
+    font-weight: bold;
+
+
+
+}
+/*
+main article {
+  display: flex;
+  flex-direction: row;
+}
+ */

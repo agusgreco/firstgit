@@ -3,7 +3,7 @@ window.onload = function(){
   var id = URLParams.get('id');
 console.log(id);
 
-  var url = "https://api.giphy.com/v1/gifs/" + id + "?api_key=oDTxfeJUVjbbzW3BQmumHLRIMuDsukrL"
+  var url = "https://api.themoviedb.org/3/movie/" + id + "?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US"
 
     fetch(url)
       .then(function(respuesta) {
@@ -11,22 +11,24 @@ console.log(id);
       })
       .then(function(resultado) {
         console.log(resultado);
-        console.log(resultado.data);
-        // for (var i = 0; i < resultado.data.length; i++) {
-         var id = resultado.data.id
-         var title = resultado.data.title
-         var url = resultado.data.images.original.url
-         console.log("dgd");
-         console.log(title);
-         document.querySelector("h1").innerHTML += "<p>" + title + "</p>";
-         document.querySelector("h1").innerHTML += "<img src=" + url + ">"
-
-         var source = resultado.data.source
-         document.querySelector("h2").innerHTML += "<p>" + source + "</p>";
 
 
 
-        // }
+         var id = resultado.id
+         var title = resultado.title
+         var overview = resultado.overview
+         var poster = resultado.poster_path
+         var mainurl = "https://image.tmdb.org/t/p/original/"
+
+
+         var article = ""
+         article += "<article>"
+          article += "<img src='" + mainurl+ poster + "'> "
+           article += "<div><p> " + title + " </p>"
+           article += "<p> " + overview + " </p></div>"
+         article += "</article>"
+         document.querySelector("main").innerHTML += article
+
 
       })
       .catch(function(error) {
