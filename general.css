@@ -1,3 +1,9 @@
+*{box-sizing: border-box;}
+
+body{
+  margin:0;
+}
+
 ul {
   list-style: none;
 margin: 0;
@@ -34,4 +40,42 @@ a.gen{
 
 img.logg {
   width: 100%
+}
+
+
+
+
+
+footer{
+
+  position: relative;
+  background-color: black;
+  color: white;
+height: 15vh;
+font-size: 0.5em;
+}
+
+.names {
+font-family: sans-serif;
+position: absolute;
+top: 8vh;
+left: 20vw;
+}
+
+.alumnos{
+position: absolute;
+font-family: sans-serif;
+left: 20vw;
+top: 2vh;
+
+}
+
+.tmdb{
+position: absolute;
+font-family: sans-serif;
+max-width:70px;
+width: 100%;
+top: 3vh;
+left: 1vw;
+
 }

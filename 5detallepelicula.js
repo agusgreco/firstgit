@@ -19,13 +19,24 @@ console.log(id);
          var overview = resultado.overview
          var poster = resultado.poster_path
          var mainurl = "https://image.tmdb.org/t/p/original/"
+         var release = resultado.release_date
+         var runtime = resultado.runtime
+         var tagline = resultado.tagline
+
+
 
 
          var article = ""
          article += "<article>"
           article += "<img src='" + mainurl+ poster + "'> "
-           article += "<div><p> " + title + " </p>"
-           article += "<p> " + overview + " </p></div>"
+           article += "<div><p class='titleclass'> " + title + " </p>"
+           article += "<p class='taglineclass'>" + tagline + " </p>"
+           article += "<p> " + overview + " </p>"
+           article += "<br> <br>"
+
+           article += "<p> Release date:  " + release + " </p>"
+           article += "<p> Runtime:  " + runtime + " </p>"
+           article += "</div>"
          article += "</article>"
          document.querySelector("main").innerHTML += article
 

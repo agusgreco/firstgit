@@ -30,8 +30,12 @@
 // }
 
 window.onload = function(){
+  var URLParams = new URLSearchParams(window.location.search);
+  var id = URLParams.get('id');
+console.log(id);
 
-  fetch("https://api.themoviedb.org/3/discover/movie?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1")
+
+  fetch("https://api.themoviedb.org/3/discover/movie?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + id)
    .then(function(response) {
      return response.json();
    })
@@ -48,7 +52,7 @@ window.onload = function(){
 
       var article = ""
       article += "<article>"
-        article += "<a href='5detallepelicula.html?id=" + id + "'> <p> " + title + " </p>"
+        article += "<a class='genretitle' href='5detallepelicula.html?id=" + id + "'> <p> " + title + " </p>"
         article += "<img src='" + mainurl+ poster + "' style='width: 300px;' > </a>"
       article += "</article>"
       document.querySelector("main").innerHTML += article
