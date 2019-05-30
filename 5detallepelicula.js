@@ -22,10 +22,13 @@ console.log(id);
          var release = resultado.release_date
          var runtime = resultado.runtime
          var tagline = resultado.tagline
+         var genres = resultado.genres.name // porque esto no me esta andando!!!
+         var originallanguage = resultado.original_language
+         var video = resultado.video
 
 
 
-
+///ver recomendaciones???!!!
          var article = ""
          article += "<article>"
           article += "<img src='" + mainurl+ poster + "'> "
@@ -34,8 +37,11 @@ console.log(id);
            article += "<p> " + overview + " </p>"
            article += "<br> <br>"
 
+           article += "<p> Genres:  " + genres + " </p>"  //aca!!! y como lo linkeo con pag 3 si no se cuantos son
+           article += "<p> Original Language:  " + originallanguage + " </p>"   // dice "en" -> !!!???
            article += "<p> Release date:  " + release + " </p>"
            article += "<p> Runtime:  " + runtime + " </p>"
+           article += "<p> " + video + " </p>" /// como hago aca??!!!
            article += "</div>"
          article += "</article>"
          document.querySelector("main").innerHTML += article
