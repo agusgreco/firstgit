@@ -89,7 +89,7 @@ console.log(id);
         articlesuge += "</article>"
         document.querySelector("main").innerHTML += article
 
-
+//
 })
 
 }
