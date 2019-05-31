@@ -84,14 +84,14 @@ console.log(id);
         var array = resultados.results
         for (var i = 0; i < array.length; i++) {
           console.log(array[i].title);
-        otro = otro + array[i].title
+        otro = otro + "<a class='link-otro' href=5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  ">" + array[i].title  + "</a>" + "/ "
 
 
 }
         var articlesuge = ""
         articlesuge += "<article>"
 
-        // articlesuge += "<p>" + titlesuge + " </p>"
+        articlesuge += "<p><a" + otro + " </p>"
 
         articlesuge += "</article>"
         document.querySelector("main").innerHTML += articlesuge
