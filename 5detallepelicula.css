@@ -35,5 +35,10 @@ main article {
 }
 
 .taglineclass{
-  font-style: italic;: 
+  font-style: italic;:
+}
+
+.link-genero{
+  text-decoration: none;
+  color: black;  
 }

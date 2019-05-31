@@ -25,7 +25,7 @@ console.log(id);
          var genres = resultado.genres
          var listadodegenero = ""
           for (var i = 0; i < genres.length; i++) {
-            listadodegenero = listadodegenero + genres[i].name  + "/ "
+            listadodegenero = listadodegenero + "<a class='link-genero' href=3peliculasporgenero.html?id=" + genres[i].id + "&name=" + genres[i].name +  ">" + genres[i].name  + "</a>" + "/ "
           }
 
          var originallanguage = resultado.original_language
@@ -34,7 +34,6 @@ console.log(id);
 
 
 
-///ver recomendaciones???!!!
          var article = ""
          article += "<article>"
           article += "<img src='" + mainurl+ poster + "'> "
@@ -43,7 +42,7 @@ console.log(id);
            article += "<p> " + overview + " </p>"
            article += "<br> <br>"
 
-           article += "<p> Genres:  " + listadodegenero + " </p>"
+           article += "<p>  Genres: " + listadodegenero + "</p>"
            article += "<p> Original Language:  " + originallanguage + " </p>"
            article += "<p> Release date:  " + release + " </p>"
            article += "<p> Runtime:  " + runtime + " </p>"
@@ -62,5 +61,35 @@ console.log(id);
       })
 
 
+
+//aca empieza ver recommendations
+
+
+
+        var URLParams = new URLSearchParams(window.location.search);
+        var id = URLParams.get('id');
+      console.log(id);
+
+    var url = "https://api.themoviedb.org/3/movie/" + id + "/recommendations?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US&page=1"
+
+
+    fetch(url)
+      .then(function(respuesta) {
+        return respuesta.json()
+      })
+      .then(function(resultados) {
+        console.log(resultados);
+
+        var titlesuge = resultados.title
+
+        var articlesuge = ""
+        articlesuge += "<article>"
+
+
+        articlesuge += "</article>"
+        document.querySelector("main").innerHTML += article
+
+
+})
 
 }

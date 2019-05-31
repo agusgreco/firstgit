@@ -19,16 +19,18 @@ console.log(id);
 
 // tambien, como hago lo de paginados???!!! para que se vean mas peliculas?
 
-     for (var i = 0; i < 10; i++) {
-      var id = resultado.results[i].id
-      var title = resultado.results[i].title
-      var poster = resultado.results[i].poster_path
 
       var articleuno = ""
       articleuno += "<article>"
       articleuno += "<h1>" + URLParams.get('name');  + "</h1>"
       articleuno += "</article>"
       document.querySelector("main").innerHTML += articleuno
+
+     for (var i = 0; i < 10; i++) {
+      var id = resultado.results[i].id
+      var title = resultado.results[i].title
+      var poster = resultado.results[i].poster_path
+
 
 
 
