@@ -24,6 +24,14 @@ console.log(id);
       var title = resultado.results[i].title
       var poster = resultado.results[i].poster_path
 
+      var articleuno = ""
+      articleuno += "<article>"
+      articleuno += "<h1>" + URLParams.get('name');  + "</h1>"
+      articleuno += "</article>"
+      document.querySelector("main").innerHTML += articleuno
+
+
+
       var article = ""
       article += "<article>"
         article += "<a class='genretitle' href='5detallepelicula.html?id=" + id + "'> <p> " + title + " </p>"

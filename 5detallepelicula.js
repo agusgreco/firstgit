@@ -23,9 +23,11 @@ console.log(id);
          var runtime = resultado.runtime
          var tagline = resultado.tagline
          var genres = resultado.genres
+         var listadodegenero = ""
           for (var i = 0; i < genres.length; i++) {
-            genres[i].name
+            listadodegenero = listadodegenero + genres[i].name  + "/ "
           }
+
          var originallanguage = resultado.original_language
          var video = resultado.video
 
@@ -41,7 +43,7 @@ console.log(id);
            article += "<p> " + overview + " </p>"
            article += "<br> <br>"
 
-           article += "<p> Genres:  " + genres + " </p>"  //aca!!! y como lo linkeo con pag 3 si no se cuantos son
+           article += "<p> Genres:  " + listadodegenero + " </p>"
            article += "<p> Original Language:  " + originallanguage + " </p>"
            article += "<p> Release date:  " + release + " </p>"
            article += "<p> Runtime:  " + runtime + " </p>"

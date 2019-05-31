@@ -16,12 +16,11 @@ window.onload = function(){
      //  console.log(classs)
      //
       // document.querySelector(classs).innerHTML += "<p><a href='3peliculasporgenero.html?id=" + resultado.genres[i].id + "'>" + resultado.genres[i].name + "</p>";
-      document.querySelector(".gen0").innerHTML += "<p><a class='genreclasss' href='3peliculasporgenero.html?id=" + resultado.genres[0].id + "'>" + resultado.genres[0].name + "</p>";
-      document.querySelector(".gen1").innerHTML += "<p><a class='genreclasss' href='3peliculasporgenero.html?id=" + resultado.genres[1].id + "'>" + resultado.genres[1].name + "</p>";
-      document.querySelector(".gen2").innerHTML += "<p><a  class='genreclasss' href='3peliculasporgenero.html?id=" + resultado.genres[2].id + "'>" + resultado.genres[2].name + "</p>";
-      document.querySelector(".gen3").innerHTML += "<p><a  class='genreclasss' href='3peliculasporgenero.html?id=" + resultado.genres[3].id + "'>" + resultado.genres[3].name + "</p>";
-     //
-     //
+      for (var i = 0; i < resultado.genres.length; i++) {
+        document.querySelector(".generos").innerHTML += "<div class='gene'><p><a class='genreclasss' href='3peliculasporgenero.html?id=" + resultado.genres[i].id + "&name=" + resultado.genres[i].name + "'>" + resultado.genres[i].name + "</p></div>";
+
+      }
+
      // }
    })
    .catch(function(error) {
