@@ -80,14 +80,21 @@ console.log(id);
       .then(function(resultados) {
         console.log(resultados);
 
-        var titlesuge = resultados.title
+        var otro = ""
+        var array = resultados.results
+        for (var i = 0; i < array.length; i++) {
+          console.log(array[i].title);
+        otro = otro + array[i].title
 
+
+}
         var articlesuge = ""
         articlesuge += "<article>"
 
+        // articlesuge += "<p>" + titlesuge + " </p>"
 
         articlesuge += "</article>"
-        document.querySelector("main").innerHTML += article
+        document.querySelector("main").innerHTML += articlesuge
 
 //
 })
