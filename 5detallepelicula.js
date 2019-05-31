@@ -22,7 +22,10 @@ console.log(id);
          var release = resultado.release_date
          var runtime = resultado.runtime
          var tagline = resultado.tagline
-         var genres = resultado.genres.name // porque esto no me esta andando!!!
+         var genres = resultado.genres
+          for (var i = 0; i < genres.length; i++) {
+            genres[i].name
+          }
          var originallanguage = resultado.original_language
          var video = resultado.video
 
@@ -39,7 +42,7 @@ console.log(id);
            article += "<br> <br>"
 
            article += "<p> Genres:  " + genres + " </p>"  //aca!!! y como lo linkeo con pag 3 si no se cuantos son
-           article += "<p> Original Language:  " + originallanguage + " </p>"  
+           article += "<p> Original Language:  " + originallanguage + " </p>"
            article += "<p> Release date:  " + release + " </p>"
            article += "<p> Runtime:  " + runtime + " </p>"
            if (video){
