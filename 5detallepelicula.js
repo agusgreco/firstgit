@@ -28,6 +28,7 @@ console.log(id);
 
 
 
+
 ///ver recomendaciones???!!!
          var article = ""
          article += "<article>"
@@ -38,10 +39,13 @@ console.log(id);
            article += "<br> <br>"
 
            article += "<p> Genres:  " + genres + " </p>"  //aca!!! y como lo linkeo con pag 3 si no se cuantos son
-           article += "<p> Original Language:  " + originallanguage + " </p>"   // dice "en" -> !!!???
+           article += "<p> Original Language:  " + originallanguage + " </p>"  
            article += "<p> Release date:  " + release + " </p>"
            article += "<p> Runtime:  " + runtime + " </p>"
-           article += "<p> " + video + " </p>" /// como hago aca??!!!
+           if (video){
+                article += "<p> " + video + " </p>"
+           }
+
            article += "</div>"
          article += "</article>"
          document.querySelector("main").innerHTML += article
