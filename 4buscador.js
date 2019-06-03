@@ -14,19 +14,27 @@ console.log(query);
       .then(function(resultado) {
         console.log(resultado);
        var peliculas = resultado.results
-        //document.querySelector(".avatar-user").src = resultado.data
+       var poster =resultado.poster_path
+       var mainurl = "https://image.tmdb.org/t/p/original/"
+
+
        for (var i = 0; i < peliculas.length; i++) {
-        //var id = resultado.data[i].id
          var title = peliculas[i].title
-         //var url = resultado.data[i].images.original.url
 
         document.querySelector("h1").innerHTML += "<p><a href='detalle.html?id='>" + title + "</p>";
-         document.querySelector("h1").innerHTML += "<img src=" + url + ">"
+        for (var i = 0; i < array.length; i++) {
+          console.log(array[i].title);
+        otro = otro + "<a class='linkjj' href=5detallepelicula.html?id=" + peliculas[i].id + "&name=" + peliculas[i].title +  ">" + peliculas[i].title  + "</a>" + "/ "
+}
+        var article2 =""
+        article2 += "<article>"
+         article2 += "<img src='" + mainurl+ poster + "'> "
+      article2 += "</article>"
+      document.querySelector(".posters").innerHTML += article2
 
 
-        }
 
-      })
+    })
       .catch(function(error) {
         console.log("Error: " + error);
       })
