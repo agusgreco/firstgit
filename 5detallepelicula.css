@@ -40,5 +40,19 @@ main article {
 
 .link-genero{
   text-decoration: none;
-  color: black;  
+  color: black;
+}
+
+.link-otro{
+  text-decoration: none;
+  color: black;
+}
+
+
+.ocultar{
+display:none;
+}
+
+.mostrar{
+  display: block;
 }

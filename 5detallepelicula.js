@@ -72,7 +72,6 @@ console.log(id);
 
     var url = "https://api.themoviedb.org/3/movie/" + id + "/recommendations?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US&page=1"
 
-
     fetch(url)
       .then(function(respuesta) {
         return respuesta.json()
@@ -82,21 +81,33 @@ console.log(id);
 
         var otro = ""
         var array = resultados.results
+        var mainurl = "https://image.tmdb.org/t/p/original/"
         for (var i = 0; i < array.length; i++) {
-          console.log(array[i].title);
-        otro = otro + "<a class='link-otro' href=5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  ">" + array[i].title  + "</a>" + "/ "
+        otro = otro + "<a class='link-otro' href=5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  ">" + array[i].title  + "<img src='" + mainurl + array[i].poster_path + "'</a>" + "/ "
+        }
 
 
-}
+
         var articlesuge = ""
+        articlesuge += '<button id="mo" > SUGGESTIONS </button>'
         articlesuge += "<article>"
-
-        articlesuge += "<p><a" + otro + " </p>"
-
+        articlesuge += "<p class='ocultar'>" + otro + " </p>"
         articlesuge += "</article>"
-        document.querySelector("main").innerHTML += articlesuge
+        document.querySelector(".otroart").innerHTML += articlesuge
 
-//
+
+
+        var ocultado = document.querySelector('.ocultar')
+
+        var bot = document.querySelector('#mo')
+        bot.addEventListener('click', mostrar)
+        function mostrar(){
+
+          ocultado.classList.toggle('ocultar')
+        }
 })
+
+
+
 
 }
