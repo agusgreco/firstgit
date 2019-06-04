@@ -1,18 +1,18 @@
 
 p{
-  color: black;
+  color: white;
 }
 
 article{
   overflow: hidden;
-
+  background-color: #282828
 }
 
 article img{
   width: 30%;
   float: left;
     padding: 1%;
-
+  background-color: #282828
 }
 article div{
   float: left;
@@ -20,7 +20,8 @@ article div{
     padding: 1%;
     font-weight: bold;
     font-family: inherit;
-
+  background-color: #282828
+  color: white;
 
 }
 /*
@@ -32,15 +33,20 @@ main article {
 
 .titleclass{
   font-size: 2em;
+    font-family: sans-serif;
+    color: white;
 }
 
 .taglineclass{
-  font-style: italic;:
+  font-style: italic;
+  font-family: sans-serif;
+  color: white;
 }
 
 .link-genero{
   text-decoration: none;
-  color: black;
+  color: white;
+    font-family: sans-serif;
 }
 
 .link-otro{
@@ -48,6 +54,10 @@ main article {
   color: black;
 }
 
+p{
+
+  font-family: sans-serif;
+}
 
 .ocultar{
 display:none;

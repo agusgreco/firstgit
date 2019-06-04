@@ -9,9 +9,10 @@ ul {
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: black;
+background-color: #181818;
 margin-top: 0;
 margin-bottom: 0;
+font-family: sans-serif;
 }
 
 li.home {
@@ -42,17 +43,14 @@ img.logg {
   width: 100%
 }
 
-
-
-
-
 footer{
 
   position: relative;
-  background-color: black;
+  background-color: #181818;
   color: white;
 height: 15vh;
 font-size: 0.5em;
+font-family: sans-serif;
 }
 
 .names {
