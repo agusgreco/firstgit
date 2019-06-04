@@ -83,15 +83,15 @@ console.log(id);
         var array = resultados.results
         var mainurl = "https://image.tmdb.org/t/p/original/"
         for (var i = 0; i < array.length; i++) {
-        otro = otro + "<a class='link-otro' href=5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  ">" + array[i].title  + "<img src='" + mainurl + array[i].poster_path + "'</a>" + "/ "
+        otro = otro + "<div> <a class='link-otro' href=5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  ">" +"<p>" + array[i].title  +"</p>"+ "<img src='" + mainurl + array[i].poster_path + "'></a> </div>" + "/ "
         }
 
 
 
         var articlesuge = ""
         articlesuge += '<button id="mo" > SUGGESTIONS </button>'
-        articlesuge += "<article>"
-        articlesuge += "<p class='ocultar'>" + otro + " </p>"
+        articlesuge += "<article class='ocultar'>"
+        articlesuge += otro
         articlesuge += "</article>"
         document.querySelector(".otroart").innerHTML += articlesuge
 

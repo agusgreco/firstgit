@@ -41,7 +41,7 @@ p{
   display: none;
 }
 
-.prev .next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -54,6 +54,7 @@ p{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 3;
 }
 
 
@@ -87,7 +88,7 @@ p{
   transition: background-color 0.6s ease;
 }
 
-.active .dot:hover {
+.active, .dot:hover {
   background-color: #717171;
 }
 
