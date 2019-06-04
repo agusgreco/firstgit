@@ -23,14 +23,13 @@ console.log(query);
 
         document.querySelector("h1").innerHTML += "<p><a href='detalle.html?id='>" + title + "</p>";
         for (var i = 0; i < array.length; i++) {
-          console.log(array[i].title);
-        otro = otro + "<a class='linkjj' href=5detallepelicula.html?id=" + peliculas[i].id + "&name=" + peliculas[i].title +  ">" + peliculas[i].title  + "</a>" + "/ "
-}
-        var article2 =""
-        article2 += "<article>"
-         article2 += "<img src='" + mainurl+ poster + "'> "
-      article2 += "</article>"
-      document.querySelector(".posters").innerHTML += article2
+          console.log(array[i].title);}}
+//         otro = otro + "<a class='linkjj' href=5detallepelicula.html?id=" + peliculas[i].id + "&name=" + peliculas[i].title +  ">" + peliculas[i].title  + "</a>" + "/ "
+      //   var article2 =""
+      //   article2 += "<article>"
+      //    article2 += "<img src='" + mainurl+ poster + "'> "
+      // article2 += "</article>"
+      // document.querySelector(".posters").innerHTML += article2
 
 
 
