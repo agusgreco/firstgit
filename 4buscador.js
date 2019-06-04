@@ -1,6 +1,4 @@
 window.onload = function(){
-
-
 var URLParams = new URLSearchParams(window.location.search);
 var query = URLParams.get('buscador');
 
@@ -14,25 +12,16 @@ console.log(query);
       .then(function(resultado) {
         console.log(resultado);
        var peliculas = resultado.results
-       var poster =resultado.poster_path
+       var poster = "";
        var mainurl = "https://image.tmdb.org/t/p/original/"
-
-
+       var title = "";
        for (var i = 0; i < peliculas.length; i++) {
-         var title = peliculas[i].title
+            title = peliculas[i].title
+            document.querySelector(".articulo").innerHTML += "<p><a href='detalle.html?id='>" + title + "</p>";
 
-        document.querySelector("h1").innerHTML += "<p><a href='detalle.html?id='>" + title + "</p>";
-        for (var i = 0; i < array.length; i++) {
-          console.log(array[i].title);}}
-//         otro = otro + "<a class='linkjj' href=5detallepelicula.html?id=" + peliculas[i].id + "&name=" + peliculas[i].title +  ">" + peliculas[i].title  + "</a>" + "/ "
-      //   var article2 =""
-      //   article2 += "<article>"
-      //    article2 += "<img src='" + mainurl+ poster + "'> "
-      // article2 += "</article>"
-      // document.querySelector(".posters").innerHTML += article2
-
-
-
+            poster = peliculas[i].poster_path
+            document.querySelector(".articulo").innerHTML += "<img src='" + mainurl + poster + "'>"
+        }
     })
       .catch(function(error) {
         console.log("Error: " + error);

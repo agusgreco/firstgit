@@ -1,5 +1,7 @@
 window.onload = function() {
 
+  var urlDetalle = "5detallepelicula.html?id=";
+var nombrePeli13;
 //Populares
  fetch("https://api.themoviedb.org/3/movie/popular?api_key=0f61f9e045cc4f90eaffcb0e1aff08fb&language=en-US&page=1")
   .then(function(response) {
@@ -8,13 +10,15 @@ window.onload = function() {
   .then(function(resultado) {
 
     for (var i = 0; i < 6; i++) {
-      var nombrePeli13 = resultado.results[i].title;
+      nombrePeli13 = resultado.results[i].title;
       console.log(nombrePeli13);
       var h1q = document.querySelector(".peli" + (i + 1))
       console.log(h1q);
       h1q.innerText=nombrePeli13
       var img12 = document.querySelector(".img" + (i + 1))
       img12.setAttribute("src", "https://image.tmdb.org/t/p/original" + resultado.results[i].poster_path)
+
+      document.querySelector(".detalle" + (i + 1)).href = urlDetalle+resultado.results[i].id
     }
   })
   .catch(function(error) {
@@ -33,6 +37,8 @@ window.onload = function() {
          h1q.innerText=nombrePeli13
          var img12 = document.querySelector(".img" + (i + 7))
          img12.setAttribute("src", "https://image.tmdb.org/t/p/original" + resultado.results[i].poster_path)
+
+               document.querySelector(".detalle" + (i + 7)).href = urlDetalle+resultado.results[i].id
        }
      })
      .catch(function(error) {
@@ -52,6 +58,8 @@ window.onload = function() {
             h1q.innerText=nombrePeli13
             var img12 = document.querySelector(".img" + (i + 13))
             img12.setAttribute("src", "https://image.tmdb.org/t/p/original" + resultado.results[i].poster_path)
+
+                  document.querySelector(".detalle" + (i + 13)).href = urlDetalle+resultado.results[i].id
           }
 
         })
