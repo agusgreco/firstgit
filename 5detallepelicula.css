@@ -147,3 +147,18 @@ display:none;
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+/*ZOE */
+
+.star{
+  cursor: pointer;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-gold {
+  color: gold;
+}
