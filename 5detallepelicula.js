@@ -60,7 +60,6 @@ console.log(id);
         console.log("Error: " + error);
       })
 
-//kkasdm
 
 //aca empieza ver recommendations
 
