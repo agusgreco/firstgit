@@ -1,1 +1,41 @@
 
+img{
+
+  width: 30%;
+margin-left: 30%;
+border-radius: 25px;
+}
+
+.posters{
+    padding: 1%;
+    font-weight: bold;
+    font-family: inherit;
+  background-color: #282828;
+  color: white;
+
+}
+
+.logo{
+  width: 100%;
+}
+
+.newbusqueda{
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+a{
+  text-decoration: none;
+color: white;
+}
+
+p{
+margin-left: 30%;
+font-family: sans-serif;
+
+
+}
+
+.tmdb{
+  margin-left: 0
+}
