@@ -82,6 +82,13 @@ console.log(id);
         var otro = ""
         var array = resultados.results
         var mainurl = "https://image.tmdb.org/t/p/original/"
+
+        var div = ""
+        div += "<div style='text-align:center'>"
+        var x = 0;
+
+
+
         for (var i = 0; i < array.length; i++) {
         otro = otro + "<div> <a class='link-otro' href=5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  ">" +"<p>" + array[i].title  +"</p>"+ "<img src='" + mainurl + array[i].poster_path + "'></a> </div>" + "/ "
         }
@@ -95,6 +102,8 @@ console.log(id);
         articlesuge += "</article>"
         document.querySelector(".otroart").innerHTML += articlesuge
 
+        x=i+1;
+        div += "<span class='dot' onclick='currentSlide("+x+")'> </span>"
 
 
         var ocultado = document.querySelector('.ocultar')
@@ -105,9 +114,49 @@ console.log(id);
 
           ocultado.classList.toggle('ocultar')
         }
+
+        div += "</div>"
+       document.querySelector("main").innerHTML += div
+
+
+       showSlides(1);
 })
 
 
 
 
+}
+
+
+
+var slideIndex = 1;
+
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  console.log(n);
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  console.log(slides);
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  console.log(slides[slideIndex-1]);
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
