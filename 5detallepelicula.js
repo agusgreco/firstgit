@@ -90,7 +90,7 @@ console.log(id);
 
 
         for (var i = 0; i < array.length; i++) {
-        otro = otro + "<div> <a class='link-otro' href=5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  ">" +"<p>" + array[i].title  +"</p>"+ "<img src='" + mainurl + array[i].poster_path + "'></a> </div>" + "/ "
+        otro = otro + "<article class='slideshow-container'> <div class='mySlides fade'> <a class='link-otro genretitle' href='5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  "'> <img src='" + mainurl + array[i].poster_path + "'<div> <p class='thispara'> " + array[i].title + " </p> </div> </a>" + " </div>" 
         }
 
 
@@ -122,7 +122,9 @@ console.log(id);
        showSlides(1);
 })
 
-
+.catch(function(error) {
+ console.log("Error: " + error);
+})
 
 
 }
