@@ -15,7 +15,7 @@ console.log(query);
        var poster = "";
        var mainurl = "https://image.tmdb.org/t/p/original/"
        var title = "";
-       for (var i = 0; i < peliculas.length; i++) {
+       for (var i = 0; i < 4 ; i++)  {
             title = peliculas[i].title
             document.querySelector(".articulo").innerHTML += "<p><a href='detalle.html?id='>" + title + "</p>";
 
