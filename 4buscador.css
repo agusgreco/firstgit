@@ -20,18 +20,20 @@ border-radius: 25px;
 }
 
 .newbusqueda{
-  font-family: sans-serif;
+  font-family:courier;
   font-size: medium;
+  color:#ff9933
 }
 
 a{
   text-decoration: none;
-color: white;
+color:#ff9933
 }
 
 p{
 margin-left: 30%;
-font-family: sans-serif;
+font-family: courier;
+
 
 
 }

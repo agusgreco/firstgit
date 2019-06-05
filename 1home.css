@@ -1,17 +1,16 @@
 .populares {
-    border-radius: 25px;
-    background:	#606060;
-    padding: 20px;
+
+    background:	#282828;
     font-size: large;
-    margin-bottom: 1%;
-    font-family: sans-serif;
+    font-family:courier;
     overflow: hidden;
     text-align: center;
+    color: white;
 
 }
 .Peli1{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -19,7 +18,7 @@
 }
 .Peli2{
   float: left;
-  background-color: 	#606060;
+  background-color: 	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -27,7 +26,7 @@
 }
 .Peli3{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -35,7 +34,7 @@
 }
 .Peli4{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -43,7 +42,7 @@
 }
 .Peli5{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -51,25 +50,23 @@
 }
 .Peli6{
   float: left;
-  background-color: 	#606060;
+  background-color: 	#282828;
     width: 100%;
 margin-top: 5%;
   text-align: center;
   border-radius: 25px;
 }
 .mayorpuntaje{
-  border-radius: 25px;
-  background:  	#606060;
-  padding: 20px;
+  background:	#282828;
   font-size: large;
-  margin-bottom: 1%;
-  font-family: sans-serif;
+  font-family: courier;
   overflow: hidden;
+  color: white;
   text-align: center;
 }
 .Peli7{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -77,7 +74,7 @@ margin-top: 5%;
 }
 .Peli8{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -85,7 +82,7 @@ margin-top: 5%;
 }
 .Peli9{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -93,7 +90,7 @@ margin-top: 5%;
 }
 .Peli10{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -101,7 +98,7 @@ margin-top: 5%;
 }
 .Peli11{
   float: left;
-  background-color: 	#606060;
+  background-color: 	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -109,25 +106,23 @@ margin-top: 5%;
 }
 .Peli12{
   float: left;
-  background-color:	#606060;
+  background-color:	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
   margin-top: 5%
 }
 .proximamente{
-  border-radius: 25px;
-  background: 	#606060;
-  padding: 20px;
+  background:	#282828;
   font-size: large;
-  margin-bottom: 1%;
-  font-family: sans-serif;
+  font-family: courier;
   overflow: hidden;
+  color: white;
   text-align: center;
 }
 .Peli13{
   float: left;
-  background-color: 	#606060;
+  background-color: #282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -135,7 +130,7 @@ margin-top: 5%;
 }
 .Peli14{
   float: left;
-  background-color:  	#606060;
+  background-color:  	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -143,7 +138,7 @@ margin-top: 5%;
 }
 .Peli15{
   float: left;
-  background-color:  	#606060;
+  background-color:  	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -151,7 +146,7 @@ margin-top: 5%;
 }
 .Peli16{
   float: left;
-  background-color:  	#606060;
+  background-color:  	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -159,7 +154,7 @@ margin-top: 5%;
 }
 .Peli17{
   float: left;
-  background-color:  	#606060;
+  background-color:  	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -167,7 +162,7 @@ margin-top: 5%;
 }
 .Peli18{
   float: left;
-  background-color:  	#606060;
+  background-color:  	#282828;
   width: 100%;
   text-align: center;
   border-radius: 25px;
@@ -180,12 +175,12 @@ img.varias {
 }
 a.next{
       padding-top: 45%;
-      color:#003311;
+      color:#ff9933;
 }
 a.prev{
       left:0px;
       padding-top: 45%;
-      color:#003311;
+      color:#ff9933;
 }
 div.text{
 }
@@ -198,13 +193,6 @@ h1.peli1,h1.peli2,h1.peli3,h1.peli4,h1.peli5,h1.peli6,h1.peli7,h1.peli8,h1.peli9
   position: absolute;
   color: #ff9933;
 }
-
-
-
-
-
-
-
 
 /* CARROUSEL */
 * {box-sizing:border-box}

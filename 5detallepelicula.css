@@ -1,6 +1,7 @@
 
 p{
-  color: white;
+  font-family: courier;
+   color:#ff9933;
 }
 
 article{
@@ -19,9 +20,9 @@ article div{
   width: 70%;
     padding: 1%;
     font-weight: bold;
-    font-family: inherit;
+    font-family: courier;
   background-color: #282828
-  color: white;
+  color:#ff9933;
 
 }
 /*
@@ -33,20 +34,20 @@ main article {
 
 .titleclass{
   font-size: 2em;
-    font-family: sans-serif;
+    font-family:courier;
     color: white;
 }
 
 .taglineclass{
   font-style: italic;
-  font-family: sans-serif;
+  font-family: courier;
   color: white;
 }
 
 .link-genero{
   text-decoration: none;
   color: white;
-    font-family: sans-serif;
+    font-family: courier;
 }
 
 .link-otro{
@@ -56,7 +57,7 @@ main article {
 
 p{
 
-  font-family: sans-serif;
+  font-family: courier;
 }
 
 .ocultar{
