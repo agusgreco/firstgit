@@ -15,8 +15,11 @@ article{
 
 h1{
 font-size: 3em;
-  background-color: white;
+  background-color: black;
   font-family: courier;
+  color: white;
+  margin-top: 0;
+  padding-top: 2vh;
 }
 
 .alumnos{
@@ -25,7 +28,7 @@ font-size: 3em;
 
 main{
 
-  background-color: #282828
+  background-color: black
 }
 
 p{

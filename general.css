@@ -9,7 +9,7 @@ ul {
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: #181818;
+background-color: #242528;
 margin-top: 0;
 margin-bottom: 0;
 font-family: sans-serif;
@@ -46,7 +46,7 @@ img.logg {
 footer{
 
   position: relative;
-  background-color: #181818;
+  background-color: #242528;
   color: white;
 height: 15vh;
 font-size: 0.5em;

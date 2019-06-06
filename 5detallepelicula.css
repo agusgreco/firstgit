@@ -6,14 +6,14 @@ p{
 
 article{
   overflow: hidden;
-  background-color: #282828
+  background-color: black
 }
 
 article img{
   width: 30%;
   float: left;
     padding: 1%;
-  background-color: #282828
+  background-color: black;
 }
 article div{
   float: left;
@@ -21,9 +21,13 @@ article div{
     padding: 1%;
     font-weight: bold;
     font-family: courier;
-  background-color: #282828
+  background-color: black;
   color:white;
 
+}
+
+div{
+  background-color: black;
 }
 /*
 main article {

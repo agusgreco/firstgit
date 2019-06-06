@@ -1,6 +1,6 @@
 .populares {
 
-    background:	#282828;
+    background:	black;
     font-size: large;
     font-family:courier;
     overflow: hidden;
@@ -57,7 +57,7 @@ margin-top: 5%;
   border-radius: 25px;
 }
 .mayorpuntaje{
-  background:	#282828;
+  background:	black;
   font-size: large;
   font-family: courier;
   overflow: hidden;
@@ -113,7 +113,7 @@ margin-top: 5%;
   margin-top: 5%
 }
 .proximamente{
-  background:	#282828;
+  background:	black;
   font-size: large;
   font-family: courier;
   overflow: hidden;
