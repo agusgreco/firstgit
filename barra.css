@@ -5,12 +5,14 @@ body {
 
 .main-nav a.mostrarMenu {
   display: none;
+  right: 0;
+
 }
 
 .main-header{
   margin: auto;
 
-  height: 500px;
+
   color: white;
   border-radius: 10px;
 }
@@ -31,6 +33,8 @@ body {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  position: absolute;
+
 }
 
 .main-nav a.icon {
@@ -53,14 +57,11 @@ img .logg{
 }
 
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px) {
+@media only screen and (max-device-width: 600px) {
 
 
     .main-nav a.mostrarMenu {
       display: block;
-
     }
     ul{
       position: relative;
@@ -80,5 +81,6 @@ img .logg{
       float: none;
       display: block;
     }
+
 
 }
