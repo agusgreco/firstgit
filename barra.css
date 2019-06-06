@@ -18,7 +18,7 @@ body {
 }
 
 .main-nav {
-
+  
   background-color: #333;
   position: relative;
 }
@@ -34,7 +34,6 @@ body {
   font-size: 17px;
   display: block;
   position: absolute;
-
 }
 
 .main-nav a.icon {
@@ -43,6 +42,9 @@ body {
   position: absolute;
   right: 0;
   top: 0;
+}
+div.generos{
+  width: 100%;
 }
 
 .main-nav a:hover {
@@ -55,17 +57,28 @@ img .logg{
   color: white;
 
 }
+ul{
+  display: block;
+}
 
 
 @media only screen and (max-device-width: 600px) {
+  .main-nav a {
+    position: relative;
+  }
 
 
     .main-nav a.mostrarMenu {
       display: block;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 10;
     }
     ul{
       position: relative;
-      z-index: 999;
+      z-index: 1;
+
     }
 
     .main-nav ul{
@@ -80,7 +93,15 @@ img .logg{
     li.home{
       float: none;
       display: block;
+      width: 100%;
     }
+    form input{
+      display: inline-block;
+    }
+    #li-form{
+      display: inline;
+    }
+
 
 
 }
