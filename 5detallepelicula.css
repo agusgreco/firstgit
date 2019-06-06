@@ -160,9 +160,11 @@ display:none;
 }
 
 .color-black {
-  color: black;
+  color: grey;
+  font-size: 253%;
 }
 
 .color-gold {
   color: gold;
+  font-size: 253%;
 }

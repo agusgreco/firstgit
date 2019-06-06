@@ -3,6 +3,19 @@ window.onload = function(){
   var id = URLParams.get('id');
 console.log(id);
 
+//Zoe toco aca
+var string = localStorage.getItem("favoritos")
+var obj = JSON.parse(string)
+
+if (string != null) {
+var obj = JSON.parse(string)
+var favoritos = obj.carac;
+} else {
+var favoritos = []
+}
+//Zoe dejo de tocar aca
+
+console.log(typeof(obj));
   var url = "https://api.themoviedb.org/3/movie/" + id + "?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US"
 
     fetch(url)
@@ -38,6 +51,16 @@ console.log(id);
          article += "<article>"
           article += "<img src='" + mainurl+ poster + "'> "
            article += "<div><p class='titleclass'> " + title + " </p>"
+
+           //Zoe toco aca
+           if (favoritos.includes(id)) {
+          article += "<p class='color-gold star' id=id"+id+">&#9733;</p>" //star es la clase y color-gold es el color
+        } else {
+          article += "<p class='color-black star' id=id"+id+">&#9733;</p>"
+        }
+
+        //Zoe toco aca
+
            article += "<p class='taglineclass'>" + tagline + " </p>"
            article += "<p> " + overview + " </p>"
            article += "<br> <br>"
@@ -54,6 +77,36 @@ console.log(id);
          article += "</article>"
          document.querySelector("main").innerHTML += article
 
+         //Zoe toco
+         console.log(document.querySelector(".star"));
+
+         var star = document.querySelector(".star")
+         star.addEventListener('click', function(){
+
+           alert("tocaste estrellitas")
+          if (favoritos.includes(id)) {
+            var index = favoritos.indexOf(id)
+            favoritos.splice(index,1)
+
+            document.querySelector(".star").classList.add("color-black")
+            document.querySelector(".star").classList.remove("color-gold")
+          } else {
+            alert("entro en el else")
+            favoritos.push(id)
+            document.querySelector(".star").classList.remove("color-black")
+            document.querySelector(".star").classList.add("color-gold")
+          }
+
+          obj = {
+            carac: favoritos
+          }
+
+          string = JSON.stringify(obj)
+
+          localStorage.setItem("favoritos", string)
+        })
+        //} //termina la funcion
+      //Zoe dejo de tocar
 
       })
       .catch(function(error) {
