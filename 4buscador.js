@@ -20,7 +20,7 @@ console.log(query);
             document.querySelector(".articulo").innerHTML += "<p><a href='detalle.html?id='>" + title + "</p>";
 
             poster = peliculas[i].poster_path
-            document.querySelector(".articulo").innerHTML += "<img src='" + mainurl + poster + "'>"
+            document.querySelector(".articulo").innerHTML += "<div class:'lol'> <img src='" + mainurl + poster + "'></div>"
         }
     })
       .catch(function(error) {

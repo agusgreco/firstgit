@@ -2,7 +2,6 @@
 img{
 
   width: 30%;
-margin-left: 30%;
 border-radius: 25px;
 }
 
@@ -22,17 +21,21 @@ border-radius: 25px;
 .newbusqueda{
   font-family:courier;
   font-size: medium;
-  color:#ff9933
+  color:white;
+
 }
 
 a{
   text-decoration: none;
-color:#ff9933
+color:white;
+text-align: center;
 }
 
 p{
-margin-left: 30%;
+margin: 0;
 font-family: courier;
+padding: 0;
+text-align: center;
 
 
 
@@ -40,4 +43,8 @@ font-family: courier;
 
 .tmdb{
   margin-left: 0
+}
+
+.lol{
+  text-align: center;
 }
