@@ -168,3 +168,10 @@ display:none;
   color: gold;
   font-size: 253%;
 }
+
+@media only screen and (max-device-width: 500px){
+  article{
+    display: inline-grid;
+    text-align: -webkit-center;
+  }
+}
