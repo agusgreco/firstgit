@@ -140,6 +140,11 @@ var favoritos = []
 
         for (var i = 0; i < array.length; i++) {
         otro = otro + "<article class='slideshow-container'> <div class='mySlides fade'> <a class='prev' onclick='plusSlides(-1)'>&#10094;</a> <a class='next' onclick='plusSlides(1)'>&#10095;</a><a class='link-otro genretitle' href='5detallepelicula.html?id=" + array[i].id + "&name=" + array[i].title +  "'> <img src='" + mainurl + array[i].poster_path + "'<div> <p class='thispara'>" + array[i].title + " </p> </div> </a>" + " </div>"
+
+
+
+
+
         }
 
 
@@ -151,9 +156,10 @@ var favoritos = []
         articlesuge += "</article>"
         document.querySelector(".otroart").innerHTML += articlesuge
 
+        for (var i = 0; i < array.length; i++) {
         x=i+1;
         div += "<span class='dot' onclick='currentSlide("+x+")'> </span>"
-
+}
 
         var ocultado = document.querySelector('.ocultar')
 
