@@ -82,7 +82,7 @@ var favoritos = []
          console.log(star);
          star.addEventListener('click', function(){
 
-           alert("tocaste estrellitas")
+
           if (favoritos.includes(id)) {
             var index = favoritos.indexOf(id)
             favoritos.splice(index,1)
@@ -90,7 +90,7 @@ var favoritos = []
             document.querySelector(".star").classList.add("color-black")
             document.querySelector(".star").classList.remove("color-gold")
           } else {
-            alert("entro en el else")
+            
             favoritos.push(id)
             document.querySelector(".star").classList.remove("color-black")
             document.querySelector(".star").classList.add("color-gold")
