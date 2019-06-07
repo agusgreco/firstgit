@@ -1,7 +1,6 @@
 window.onload = function(){
   var URLParams = new URLSearchParams(window.location.search);
   var id = URLParams.get('id');
-console.log(id);
 
 //Zoe toco aca
 var string = localStorage.getItem("favoritos")
@@ -15,7 +14,7 @@ var favoritos = []
 }
 //Zoe dejo de tocar aca
 
-console.log(typeof(obj));
+
   var url = "https://api.themoviedb.org/3/movie/" + id + "?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US"
 
     fetch(url)
@@ -23,7 +22,7 @@ console.log(typeof(obj));
         return respuesta.json()
       })
       .then(function(resultado) {
-        console.log(resultado);
+
 
 
 
@@ -78,9 +77,9 @@ console.log(typeof(obj));
          document.querySelector("main").innerHTML += article
 
          //Zoe toco
-         console.log(document.querySelector(".star"));
 
          var star = document.querySelector(".star")
+         console.log(star);
          star.addEventListener('click', function(){
 
            alert("tocaste estrellitas")
@@ -120,7 +119,7 @@ console.log(typeof(obj));
 
         var URLParams = new URLSearchParams(window.location.search);
         var id = URLParams.get('id');
-      console.log(id);
+
 
     var url = "https://api.themoviedb.org/3/movie/" + id + "/recommendations?api_key=a6cd418a24c7359fa07f8d31cab596b0&language=en-US&page=1"
 
@@ -129,8 +128,6 @@ console.log(typeof(obj));
         return respuesta.json()
       })
       .then(function(resultados) {
-        console.log(resultados);
-
         var otro = ""
         var array = resultados.results
         var mainurl = "https://image.tmdb.org/t/p/original/"
@@ -168,7 +165,7 @@ console.log(typeof(obj));
         }
 
         div += "</div>"
-       document.querySelector("main").innerHTML += div
+       document.querySelector("main").insertAdjacentHTML('beforeend', div)
 
 
        showSlides(1);
@@ -197,10 +194,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  console.log(n);
+
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  console.log(slides);
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -210,7 +206,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  console.log(slides[slideIndex-1]);
+
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
