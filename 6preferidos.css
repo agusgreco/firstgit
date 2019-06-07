@@ -2,3 +2,14 @@ body{
   background-color: black;
   color: white;
 }
+
+#div-slide{
+  width: 20%;
+  margin: 0 auto;
+}
+
+/* @media only screen and (max-device-width: 600px){
+  h2 .uk-margin-remove{
+    display: none;
+  }
+} */

@@ -7,6 +7,11 @@
        		<link rel="stylesheet" href="6preferidos.css">
            <link rel="stylesheet" href="general.css">
            <meta name="viewport" content="width=device-width, user-scalable=no">
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+
+           <!-- UIkit JS -->
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
   </head>
   <body>
     <style> HTML,BODY{cursor: url("cursor.png"),  url("cursor.png"), auto;} </style>
@@ -33,7 +38,16 @@
 
     <main>
       <section id="section-fav">
+        <div id="div-slide" class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale;ratio: 2:3">
 
+            <ul class="uk-slideshow-items">
+
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div>
 
       </section>
     </main>

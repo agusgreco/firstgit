@@ -19,8 +19,7 @@ window.onload = function() {
               var mainurl = "https://image.tmdb.org/t/p/original/"
               var poster = mainurl +  pelicula.poster_path
 
-              document.querySelector("#section-fav").innerHTML += '<article class=""><p>'+title+'</p><img src="'+poster+'" alt=""></article>'
-
+              document.querySelector("#section-fav ul").innerHTML += '<li><img src="' + poster + '" alt="" uk-cover><div class="uk-position-center uk-position-small uk-text-center uk-light"><h2 class="uk-margin-remove">' + title + '</h2></div></li>'
 
 
     })
