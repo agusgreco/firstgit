@@ -23,7 +23,7 @@ console.log(id);
 
       var articleuno = ""
       articleuno += "<article>"
-      articleuno += "<h1>" + URLParams.get('name');  + "</h1>"
+      articleuno += "<h1 class='ahe'>" + URLParams.get('name');  + "</h1>"
       articleuno += "</article>"
       document.querySelector("main").innerHTML += articleuno
 
