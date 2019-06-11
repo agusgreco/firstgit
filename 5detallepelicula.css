@@ -59,6 +59,10 @@ main article {
   color: black;
 }
 
+.otroart{
+  text-align: right;
+}
+
 p{
 
   font-family: courier;
@@ -75,21 +79,30 @@ display:none;
 
 
 .slideshow-container {
-  position: relative;
   margin: auto;
 
 }
 
 .mySlides {
   display: none;
+
+}
+
+.photo{
+  float: none;
+}
+
+.division{
+  width: 100%;
+  text-align: center;
+  position: relative;
+
 }
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
+  top: 30%;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -104,6 +117,10 @@ display:none;
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: 0;
 }
 
 .prev:hover, .next:hover {
