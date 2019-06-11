@@ -20,6 +20,13 @@ div.generos{
 
 }
 
+.ocultar{
+display:none;
+}
+
+.mostrar{
+  display: block;
+}
 
 a{
   text-decoration: none;
