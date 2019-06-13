@@ -8,6 +8,10 @@
      <link rel="stylesheet" href="general.css">
      <link rel="stylesheet" href="css/uikit.min.css">
      <link rel="stylesheet" href="login.css">
+     <!-- Zoe toco aca -->
+    <link rel="stylesheet" href="barra.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Zoe dejo de tocar aca -->
 
      <meta name="viewport" content="width=device-width, user-scalable=no">
      <script type="text/javascript" src="1home.js">
@@ -22,6 +26,7 @@
   </head>
     <header class="main-header">
       <nav class="main-nav">
+
         <div class="links">
           <ul>
             <li class="home" id="home2"> <a href="1home.html"><img src="logotp.png" width="92" height="96" title="Logo" alt=></a></li>
@@ -39,10 +44,9 @@
             <span id="span"></span>
             <span id="user"><a href="" uk-icon="user" ></a></span>
           </ul>
+
         </div>
-        <!-- This is a button toggling the modal -->
-
-
+        <!-- Boton de Login -->
 <!-- This is the modal -->
 <div id="modal-example" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
@@ -77,6 +81,9 @@
         </form>
     </div>
 </div>
+<a href="javascript:void(0);" class="mostrarMenu" onclick="mostrarMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
       </nav>
     </header>
 
@@ -256,9 +263,11 @@
   </body>
 </html>
 <script src="login.js" charset="utf-8"></script>
+<!-- //Zoe toco aca -->
+       <script type="text/javascript" src="barra.js"></script>
+<!-- //Zoe toco aca -->
 
-<!--
- Header
+ <!-- Header
 PopUp Login
 Busqueda caractares y error vacio
 

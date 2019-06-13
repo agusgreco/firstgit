@@ -7,10 +7,10 @@ theForm.onsubmit = function(event){
 
   if(boton.value == "" || boton2.value == "" || boton3.value == ""){
     event.preventDefault();
-    alert("che escribi bobo");
+    alert("Porfavor, llene todos los campos");
   }else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(boton3.value))){
     event.preventDefault();
-    alert("You have entered an invalid email address!")
+    alert("Usted ingreso un mail no valido")
   }else {
     var name = boton.value;
     var pass = boton2.value;
@@ -29,6 +29,6 @@ theForm.onsubmit = function(event){
     span.innerText = nombre;
     var user = document.querySelector("#user");
     user.style.display = "inline-block";
-    
+
   }
 }
