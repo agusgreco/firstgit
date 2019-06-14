@@ -6,6 +6,10 @@
       <link rel="shortcut icon" type="image/x-icon" href="  favicon.ico">
     <link rel="stylesheet" href="4buscador.css">
     <link rel="stylesheet" href="general.css">
+    <!-- Log In -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+   <link rel="stylesheet" href="login.css">
+   <!-- Termina Log In -->
 
     <!-- <link rel="stylesheet" href="barra.css"> -->
 
@@ -19,16 +23,61 @@
           <ul>
             <li class="home" id="home2"> <a href="1home.html"><img class="logo" src="logotp.png" width="92" height="96" title="Logo" alt=></a></li>
             <li class="home"> <a class="gen" href="2generos.html">GENEROS</a></li>
-            <li class="home"><a class="gen" href="6preferidos.html">FAVORITOS</a></li>
+            <li class="home"><a class="gen fav" href="6preferidos.html">FAVORITOS</a></li>
               <br>
             <li id="li-form" class="home">
               <form action="4buscador.html"  method="get">
                 <input type="text" name="buscador" class="search">
                 <input type="submit" value="enviar" class="boton2">
               </form>
+              <!-- Log in -->
+            <li><button id="Mylogin" class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #modal-example">Log In</button>
+            </li>
+            <span id="span"></span>
+            <span id="user"><a href="" uk-icon="user" ></a></span>
+              <!-- Termina Log In -->
             </li>
           </ul>
+          <!-- Log In -->
+          <!-- This is a button toggling the modal -->
         </div>
+
+<!-- This is the modal -->
+<div id="modal-example" uk-modal>
+ <div class="uk-modal-dialog uk-modal-body">
+     <h2 class="uk-modal-title">Log in</h2>
+             <form action="#" id="Myform">
+
+         <div class="uk-margin">
+             <div class="uk-inline">
+                 <span  class="uk-form-icon" uk-icon="icon: user"></span>
+                 <input class="uk-input" id="nom" type="text">
+             </div>
+         </div>
+
+         <div class="uk-margin">
+             <div class="uk-inline">
+                 <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+                 <input class="uk-input" id="mail" type="text">
+             </div>
+         </div>
+
+         <div class="uk-margin">
+             <div class="uk-inline">
+                 <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                 <input class="uk-input" id="contra" type="password">
+             </div>
+         </div>
+
+         <p class="uk-text-right">
+           <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+           <button class="uk-button uk-button-primary" type="submit">Enviar</button>
+         </p>
+     </form>
+ </div>
+</div>
+<!-- Termina Log In -->
+
       </nav>
     </header>
 
@@ -42,6 +91,7 @@
         <input type="text" name="buscador" class="search">
         <input type="submit" value="enviar" class="boton2">
       </form>
+
     </section>
 
     <footer>
@@ -55,3 +105,9 @@
 <script type="text/javascript" src="4buscador.js"></script>
   </body>
 </html>
+
+<!-- login -->
+<script src="login.js" charset="utf-8"></script>
+<script src="js/uikit.min.js" charset="utf-8"></script>
+<script src="js/uikit-icons.min.js" charset="utf-8"></script>
+<!-- termina Log In -->

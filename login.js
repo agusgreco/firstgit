@@ -1,4 +1,20 @@
 var theForm = document.querySelector("#Myform");
+
+// localStorage.removeItem("nombre")
+
+if (localStorage.getItem("nombre") != null) {
+  var login = document.querySelector("#Mylogin");
+  login.style.display = "none";
+  var nombre = localStorage.getItem("nombre");
+  var span = document.querySelector("#span");
+  span.innerText = nombre;
+  var user = document.querySelector("#user");
+  user.style.display = "inline-block";
+  var user = document.querySelector(".fav");
+  user.style.display = "block";
+}
+
+
 theForm.onsubmit = function(event){
   var boton = document.querySelector("#nom");
   var boton2 = document.querySelector("#contra");
@@ -12,6 +28,7 @@ theForm.onsubmit = function(event){
     event.preventDefault();
     alert("Usted ingreso un mail no valido")
   }else {
+    event.preventDefault();
     var name = boton.value;
     var pass = boton2.value;
     var mail = boton3.value;
@@ -29,6 +46,8 @@ theForm.onsubmit = function(event){
     span.innerText = nombre;
     var user = document.querySelector("#user");
     user.style.display = "inline-block";
+    var user = document.querySelector(".fav");
+    user.style.display = "block";
 
   }
 }

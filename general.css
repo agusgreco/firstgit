@@ -16,7 +16,7 @@ font-family: sans-serif;
 }
 
 form{
-  
+
 }
 
 li.home {
@@ -83,4 +83,7 @@ width: 100%;
 top: 3vh;
 left: 1vw;
 
+}
+.main-nav a.fav{
+  display: none;
 }
