@@ -8,7 +8,9 @@ a.genretitle{
 
 
 }
-
+audio{
+  height: 23px
+}
 article{
   text-align: center;
 }
