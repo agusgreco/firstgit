@@ -16,7 +16,12 @@ font-family: sans-serif;
 }
 
 form{
+margin-top: -9%;
+border-radius: 1%
+}
 
+input.search{
+  border-radius: 1%;
 }
 
 li.home {
@@ -29,12 +34,6 @@ li.home {
   padding-top: 3%
 }
 
-a.gen{
-  text-decoration: none;
-  color: #d3d3d3;
-  font-family: courier
-
-}
 
 #home2 {
   width: 8%;
