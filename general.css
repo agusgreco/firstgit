@@ -51,25 +51,26 @@ footer{
 
 position: relative;
 background-color: #242528;
-color: white;
-height: 15vh;
+color: #32d296;
+height: 14vh;
 font-family: sans-serif;
+
 }
 
 .names {
-font-family: sans-serif;
+font-family: courier;
 position: absolute;
-top: 8vh;
+top: 7.3vh;
 left: 20vw;
-font-size: 0.7em;
+font-size: 1em;
 
 }
 
 .alumnos{
 position: absolute;
-font-family: sans-serif;
-left: 20vw;
-top: 2vh;
+font-family:courier;
+left: 10vw;
+top: 10vh;
 font-size: 1em;
 
 
@@ -80,8 +81,9 @@ position: absolute;
 font-family: sans-serif;
 max-width:70px;
 width: 100%;
-top: 3vh;
+top: 3.5vh;
 left: 1vw;
+border-radius: 23%;
 
 }
 .main-nav a.fav{
