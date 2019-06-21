@@ -14,6 +14,11 @@ border-radius: 25px;
 
 }
 
+body{
+  background-color: black;
+  color: white;
+}
+
 audio{
 
 height: 23px;
@@ -42,6 +47,7 @@ margin: 0;
 font-family: courier;
 padding: 0;
 text-align: center;
+color:white;
 
 
 }

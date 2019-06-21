@@ -17,10 +17,13 @@ console.log(query);
        var title = "";
        for (var i = 0; i < 4 ; i++)  {
             title = peliculas[i].title
-            document.querySelector(".articulo").innerHTML += "<p><a href='detalle.html?id='>" + title + "</p>";
-
             poster = peliculas[i].poster_path
-            document.querySelector(".articulo").innerHTML += "<div class='lol'> <img src='" + mainurl + poster + "'></div>"
+            id = peliculas[i].id
+
+
+            document.querySelector(".articulo").innerHTML += "<a href='5detallepelicula.html?id=" + id + "'><div class='lol'><p><a href='detalle.html?id='>" + title + "</p><img src='" + mainurl + poster + "'></div></a>";
+
+            // document.querySelector(".articulo").innerHTML += "<div class='lol'> <img src='" + mainurl + poster + "'></div>"
 
             //sasa el parafo tendria q estar dentro del div
         }
