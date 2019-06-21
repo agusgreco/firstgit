@@ -26,6 +26,10 @@ article div{
 
 }
 
+audio{
+  height: 23px
+}
+
 div{
   background-color: black;
 }

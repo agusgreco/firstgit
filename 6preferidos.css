@@ -8,6 +8,10 @@ body{
   margin: 0 auto;
 }
 
+audio{
+  height: 23px
+}
+
 /* @media only screen and (max-device-width: 600px){
   h2 .uk-margin-remove{
     display: none;
