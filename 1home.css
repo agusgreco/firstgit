@@ -13,6 +13,7 @@
 margin-left: 37%;
 color:aqua;
 }
+
 audio{
 
   height: 23px;
@@ -28,6 +29,7 @@ audio{
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli2{
   float: left;
   background-color: 	#282828;
@@ -36,6 +38,7 @@ audio{
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli3{
   float: left;
   background-color:	#282828;
@@ -44,6 +47,7 @@ audio{
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli4{
   float: left;
   background-color:	#282828;
@@ -52,6 +56,7 @@ audio{
   border-radius: 25px;
     margin-top: 5%
 }
+
 .Peli5{
   float: left;
   background-color:	#282828;
@@ -60,6 +65,7 @@ audio{
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli6{
   float: left;
   background-color: 	#282828;
@@ -68,6 +74,7 @@ margin-top: 5%;
   text-align: center;
   border-radius: 25px;
 }
+
 .mayorpuntaje{
   background:	black;
   font-size: large;
@@ -76,6 +83,7 @@ margin-top: 5%;
   color: white;
   text-align: center;
 }
+
 .Peli7{
   float: left;
   background-color:	#282828;
@@ -84,6 +92,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli8{
   float: left;
   background-color:	#282828;
@@ -92,6 +101,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli9{
   float: left;
   background-color:	#282828;
@@ -100,6 +110,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli10{
   float: left;
   background-color:	#282828;
@@ -108,6 +119,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli11{
   float: left;
   background-color: 	#282828;
@@ -116,6 +128,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli12{
   float: left;
   background-color:	#282828;
@@ -124,6 +137,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .proximamente{
   background:	black;
   font-size: large;
@@ -132,6 +146,7 @@ margin-top: 5%;
   color: white;
   text-align: center;
 }
+
 .Peli13{
   float: left;
   background-color: #282828;
@@ -140,6 +155,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli14{
   float: left;
   background-color:  	#282828;
@@ -148,6 +164,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli15{
   float: left;
   background-color:  	#282828;
@@ -156,6 +173,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli16{
   float: left;
   background-color:  	#282828;
@@ -164,6 +182,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli17{
   float: left;
   background-color:  	#282828;
@@ -172,6 +191,7 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 .Peli18{
   float: left;
   background-color:  	#282828;
@@ -180,27 +200,31 @@ margin-top: 5%;
   border-radius: 25px;
   margin-top: 5%
 }
+
 img.varias {
   width: 90%;
   height: 90vh;
   border-radius: 20px;
 }
+
 a.next{
       padding-top: 45%;
       color:#ff9933;
 }
+
 a.prev{
       left:0px;
       padding-top: 45%;
       color:#ff9933;
 }
-div.text{
-}
+
+
 div.numbertext{
   color: #0d0d0d;
   text-align: center;
   font-size: 35px;
 }
+
 h1.peli1,h1.peli2,h1.peli3,h1.peli4,h1.peli5,h1.peli6,h1.peli7,h1.peli8,h1.peli9,h1.peli10,h1.peli11,h1.peli12,h1.peli13,h1.peli14,h1.peli15,h1.peli16,h1.peli17,h1.peli18,{
   position: absolute;
   color: #ff9933;
